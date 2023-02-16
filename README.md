@@ -5,4 +5,5 @@
 - `/example01` 	Docker container and REST APIs for online inference  
     * `/data`  - podaci za treniranje i testiranje
     * `/src`   - izvorni kod 
-- `/example02` 	To be added
+- `/example02`  GitHub Actions to AWS ECR
+
