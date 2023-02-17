@@ -9,18 +9,14 @@ jobs:
     name: Build Image
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: example02
-
     steps:
-      - run: pwd
-
       - name: Check out code
+        working-directory: example02
         uses: actions/checkout@v2
 
       - name: Check Dockerfile with Hadolint
         uses: hadolint/hadolint-action@v3.1.0
+        working-directory: example02
         with:
           dockerfile: Dockerfile
 
@@ -40,6 +36,7 @@ jobs:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: test_ml_demo
           IMAGE_TAG: test_ml_image
+        working-directory: example02
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
