@@ -1,4 +1,4 @@
-# Case study example for Haskell Dockerfile Linter (Hadolint)
+# Case study example for Haskell Dockerfile linter (Hadolint)
 
 **As a part of a college project for Functional programming course**
 
