@@ -11,7 +11,6 @@ jobs:
 
     steps:
       - name: Check out code
-        working-directory: example02
         uses: actions/checkout@v2
 
       - name: Check Dockerfile with Hadolint
