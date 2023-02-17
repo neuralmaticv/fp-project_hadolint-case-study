@@ -1,4 +1,6 @@
-# Hadolint case study as a part of college project for Functional programming course
+# Case study example for Haskell Dockerfile Linter (Hadolint)
+
+**As a part of a college project for Functional programming course**
 
 ---
 ## Repository structure:
